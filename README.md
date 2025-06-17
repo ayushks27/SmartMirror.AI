@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+🧠 AI Mock Interview App
+An intelligent web app that simulates real-time mock interview sessions using Google's Gemini AI, with Clerk authentication, hosted on Firebase, and styled beautifully using Tailwind CSS. Built with React + TypeScript for a responsive, maintainable front-end experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔍 About the Project
+This project helps users prepare for job interviews by generating realistic AI-driven questions and evaluating responses in a structured, interactive format. Users can log in securely using Clerk, select interview topics or difficulty levels, and receive instant AI feedback powered by Gemini.
 
-Currently, two official plugins are available:
+Whether you're practicing for behavioral interviews, technical rounds, or system design, this app delivers a smart and engaging experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tech Stack
+Category	Tech Used
+Frontend	React.js, TypeScript, Tailwind CSS
+Authentication	Clerk
+Hosting	Firebase Hosting
+Backend / API	Gemini API (via Google AI)
+State & Logic	React Hooks, Context API (optional)
 
-## Expanding the ESLint configuration
+⚙️ Installation
+1. Clone the repository:
+git clone https://github.com/your-username/ai-mock-interview-app.git
+cd ai-mock-interview-app
+2. Install dependencies:
+npm install
+3. Set up environment variables:
+Create a .env file in the root directory:
+env
+VITE_CLERK_PUBLISHABLE_KEY=your-clerk-key
+VITE_GEMINI_API_KEY=your-gemini-api-key
+💡 Important: Do not expose secret Gemini keys in the frontend. Use Firebase Functions to keep it secure in production.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+4. Start the development server:
+npm run dev
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🌐 Deployment
+This app is deployed via Firebase Hosting. To deploy:
+npm run build
+firebase deploy
+You must run firebase login and firebase init once before deploying.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📸 Screenshots (optional)
+Add interface images or screen flows here.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🙌 Contributions
+Feel free to fork this repo and submit pull requests. Feedback and improvements are always welcome!
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
