@@ -11,8 +11,11 @@ Whether you're practicing for behavioral interviews, technical rounds, or system
 🚀 Tech Stack
 
 Frontend:	React.js, TypeScript, Tailwind CSS
+
 Authentication:	Clerk
+
 Hosting:	Firebase Hosting
+
 Backend API:	Gemini API 
 
 ⚙️ Installation
