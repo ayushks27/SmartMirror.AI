@@ -19,6 +19,7 @@ Hosting:	Firebase Hosting
 Backend API:	Gemini API 
 
 ⚙️ Installation
+
 1. Clone the repository:
 git clone https://github.com/your-username/ai-mock-interview-app.git
 cd ai-mock-interview-app
@@ -33,15 +34,14 @@ VITE_GEMINI_API_KEY=your-gemini-api-key
 npm run dev
 
 🌐 Deployment
+
 This app is deployed via Firebase Hosting. To deploy:
 npm run build
 firebase deploy
 You must run firebase login and firebase init once before deploying.
 
-📸 Screenshots (optional)
-Add interface images or screen flows here.
-
 🙌 Contributions
+
 Feel free to fork this repo and submit pull requests. Feedback and improvements are always welcome!
 
 
